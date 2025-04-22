@@ -1,23 +1,23 @@
-subscription_id = "78fff76a-cacd-420d-a76e-9ef47b4f29d1"
+subscription_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 resource_group_variables = {
     "resource-group-1" = {
     resource_group_name     = "sanofi-proj-rg-dev-01"
     resource_group_location = "eastus" 
     tags = {
-        PROJECT = "SANOFI-OPELLA"
-        Created_By = "VARA PRASAD REDDY"
-        CreatedBy = "VARA PRASAD REDDY"
-        Owner = "varaprasad.reddy@neudesic.com"
+        PROJECT = "SANOFI-OPELLA",
+        Created_By = "VARA PRASAD REDDY",
+        CreatedBy = "VARA PRASAD REDDY",
+        Owner = "varaprasad.reddy@abcd.com"
     }
 },
     "resource-group-2" = {
     resource_group_name     = "sanofi-proj-rg-dev-02"
     resource_group_location = "eastus" 
     tags = {
-        PROJECT = "SANOFI-OPELLA"
-        Created_By = "VARA PRASAD REDDY"
-        CreatedBy = "VARA PRASAD REDDY"
-        Owner = "varaprasad.reddy@neudesic.com"
+        PROJECT = "SANOFI-OPELLA",
+        Created_By = "VARA PRASAD REDDY",
+        CreatedBy = "VARA PRASAD REDDY",
+        Owner = "varaprasad.reddy@abcd.com"
     }  
 }
 }
@@ -35,9 +35,9 @@ network_security_group_variables = {
       destination_port_range     = "*"
       source_address_prefix      = "*"
       destination_address_prefix = "*"
-      access                     = "*"
+      access                     = "Allow"
       priority                   = 100
-      direction                  = "*"
+      direction                  = "Inbound"
     },
     {
       name                       = "port-22"
@@ -47,16 +47,16 @@ network_security_group_variables = {
       destination_port_range     = "*"
       source_address_prefix      = "*"
       destination_address_prefix = "*"
-      access                     = "*"
+      access                     = "Allow"
       priority                   = 101
-      direction                  = "*"
+      direction                  = "Inbound"
     }
     ]
      tags = {
-        PROJECT = "SANOFI-OPELLA"
-        Created_By = "VARA PRASAD REDDY"
-        CreatedBy = "VARA PRASAD REDDY"
-        Owner = "varaprasad.reddy@neudesic.com"
+        PROJECT = "SANOFI-OPELLA",
+        Created_By = "VARA PRASAD REDDY",
+        CreatedBy = "VARA PRASAD REDDY",
+        Owner = "varaprasad.reddy@abcd.com"
     }
 }
 }
@@ -81,10 +81,10 @@ virtual_network_variables = {
     }
     ]
     tags = {
-        PROJECT = "SANOFI-OPELLA"
-        Created_By = "VARA PRASAD REDDY"
-        CreatedBy = "VARA PRASAD REDDY"
-        Owner = "varaprasad.reddy@neudesic.com"
+        PROJECT = "SANOFI-OPELLA",
+        Created_By = "VARA PRASAD REDDY",
+        CreatedBy = "VARA PRASAD REDDY",
+        Owner = "varaprasad.reddy@abcd.com"
     }
   },
     "virtual-network-2" = {
@@ -94,15 +94,15 @@ virtual_network_variables = {
     address_space           = ["11.0.0.0/16"]
     subnets = [{
       name                                       = "vnet-dev-02-microservices-subnet"
-      address_prefixes                           = ["11.0.0.0/32"]
+      address_prefixes                           = ["11.0.1.0/28"]
       network_security_group_name                = null
       network_security_group_resource_group_name = null
     }]
     tags = {
-        PROJECT = "SANOFI-OPELLA"
-        Created_By = "VARA PRASAD REDDY"
-        CreatedBy = "VARA PRASAD REDDY"
-        Owner = "varaprasad.reddy@neudesic.com"
+        PROJECT = "SANOFI-OPELLA",
+        Created_By = "VARA PRASAD REDDY",
+        CreatedBy = "VARA PRASAD REDDY",
+        Owner = "varaprasad.reddy@abcd.com"
     }
   }
 }
