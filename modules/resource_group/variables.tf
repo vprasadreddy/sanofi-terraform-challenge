@@ -1,3 +1,4 @@
+## RESOURCE GROUP VARIABLES ##
 variable "resource_group_variables" {
   type = map(object({
     resource_group_name     = string

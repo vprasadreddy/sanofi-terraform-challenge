@@ -1,3 +1,4 @@
+## VIRTUAL NETWORK VARIABLES ##
 variable "virtual_network_variables" {
   type = map(object({
     virtual_network_name    = string

@@ -1,3 +1,4 @@
+## NETWORK SECURITY GROUP VARIABLES ##
 variable "network_security_group_variables" {
   type = map(object({
     name                    = string

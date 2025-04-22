@@ -1,6 +1,9 @@
+## SUBSCRIPTION VARIABLE ##
 variable "subscription_id" {
   type = string
 }
+
+## RESOURCE GROUP VARIABLES ##
 
 variable "resource_group_variables" {
   type = map(object({
@@ -10,6 +13,7 @@ variable "resource_group_variables" {
   }))
 }
 
+## NETWORK SECURITY GROUP VARIABLES ##
 variable "network_security_group_variables" {
   type = map(object({
     name                    = string
@@ -31,6 +35,8 @@ variable "network_security_group_variables" {
   }))
 }
 
+
+## VIRTUAL NETWORK VARIABLES ##
 variable "virtual_network_variables" {
   type = map(object({
     virtual_network_name    = string

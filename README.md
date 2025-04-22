@@ -1,5 +1,28 @@
-## Output Screenshot
+## Steps to run the code to setup Dev environment
 
+- Clone the Repo
+- Make necessary changes in dev.terraform.tfvars file and save it
+- Navigate to root of the project and open a terminal/command prompt
+- Run below command in sequence in terminal/command prompt
+  - terraform init
+  - terraform validate
+  - terraform plan -var-file="dev.terraform.tfvars"
+  - terraform apply -var-file="dev.terraform.tfvars" -auto-approve
+  - terraform destroy -var-file="dev.terraform.tfvars" -auto-approve
+
+## Steps to run the code to setup Dev environment
+
+- Clone the Repo
+- Copy dev.terraform.tfvars file and rename it as prod.terraform.tfvars. Update required variable values in prod.terraform.tfvars file and save it.
+- Navigate to root of the project and open a terminal/command prompt
+- Run below command in sequence in terminal/command prompt
+  - terraform init
+  - terraform validate
+  - terraform plan -var-file="prod.terraform.tfvars"
+  - terraform apply -var-file="prod.terraform.tfvars" -auto-approve
+  - terraform destroy -var-file="prod.terraform.tfvars" -auto-approve
+
+## Output Screenshot
 
 ![IMG_5271](https://github.com/user-attachments/assets/87c6bf3a-c214-46a7-b275-ab6e8f902d84)
 
