@@ -1,4 +1,4 @@
-## Steps to run the code to setup Dev environment
+## Steps to run the code to provision DEV environment
 
 - Clone the Repo
 - Make necessary changes in dev.terraform.tfvars file and save it
@@ -10,7 +10,7 @@
   - terraform apply -var-file="dev.terraform.tfvars" -auto-approve
   - terraform destroy -var-file="dev.terraform.tfvars" -auto-approve
 
-## Steps to run the code to setup Dev environment
+## Steps to run the code to setup PROD environment
 
 - Clone the Repo
 - Copy dev.terraform.tfvars file and rename it as prod.terraform.tfvars. Update required variable values in prod.terraform.tfvars file and save it.
